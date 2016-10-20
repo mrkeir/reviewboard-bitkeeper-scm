@@ -12,6 +12,7 @@ install_requires = [
     # List your project dependencies here.
     # For more details, see:
     # http://packages.python.org/distribute/setuptools.html#declaring-dependencies
+    'ReviewBoard==2.5.6.1',
 ]
 
 
@@ -19,8 +20,13 @@ setup(name='reviewboard-bitkeeper-scm',
     version=version,
     description="Support for BitKeeper repositories in ReviewBoard",
     long_description=README + '\n\n' + NEWS,
+
     classifiers=[
-      # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+        # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+        "Framework :: Django :: 1.6",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Topic :: Software Development :: Version Control"
     ],
     keywords='reviewboard bitkeeper scm',
     author='Keir Robinson',
@@ -32,7 +38,9 @@ setup(name='reviewboard-bitkeeper-scm',
     zip_safe=False,
     install_requires=install_requires,
     entry_points={
-        'console_scripts':
-            ['reviewboard-bitkeeper-scm=reviewboardbitkeeperscm:main']
+        'reviewboard.scmtools': [
+            'bk = rb_bitkeeper_scm.bk:BkTool',
+        ]
+
     }
 )
