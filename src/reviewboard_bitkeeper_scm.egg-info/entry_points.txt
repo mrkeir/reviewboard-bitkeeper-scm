@@ -1,0 +1,3 @@
+[console_scripts]
+reviewboard-bitkeeper-scm = reviewboardbitkeeperscm:main
+
