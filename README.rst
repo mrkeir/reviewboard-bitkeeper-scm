@@ -1,15 +1,14 @@
-This file requires editing
-==========================
+Support for using ReviewBoard with a BitKeeper repository
+=========================================================
 
-Note to the author: Please add something informative to this README *before*
-releasing your software, as `a little documentation goes a long way`_.  Both
-README.rst (this file) and NEWS.txt (release notes) will be included in your
-package metadata which gets displayed in the PyPI page for your project.
+ReviewBoard does not come with support for BitKeeper repositories
+this package is intended to provide that.
 
-You can take a look at the README.txt of other projects, such as repoze.bfg
-(http://bfg.repoze.org/trac/browser/trunk/README.txt) for some ideas.
+If you install it on the machine or in the container that your ReviewBoard is running
+and run the django-admin command registerscmtools then bk will be added as a supported
+SCM (at least that's the theory - right now you are looking at the start of a PoC).
 
-.. _`a little documentation goes a long way`: http://www.martinaspeli.net/articles/a-little-documentation-goes-a-long-way
+
 
 Credits
 -------
