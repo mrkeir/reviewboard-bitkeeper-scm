@@ -244,7 +244,7 @@ class BkTool(SCMTool):
             ``True`` if the diffs store filenames as absolute paths.
             ``False`` if the filenames are stored using relative paths.
         """
-        return False
+        return True
 
     def get_changeset(self, changesetid, allow_empty=False):
         """Return information on a server-side changeset with the given ID.

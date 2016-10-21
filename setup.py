@@ -23,6 +23,7 @@ setup(name='reviewboard-bitkeeper-scm',
 
     classifiers=[
         # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+        "Development Status :: 1 - Planning",
         "Framework :: Django :: 1.6",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 2.7",
